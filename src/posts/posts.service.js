@@ -8,13 +8,7 @@ export const getAllPosts = async () => {
 };
 
 export const getPostById = async (id) => {
-    const post = await prisma.post.findUnique({ where: { id } });
-
-    if (!post) {
-        throw new NotFoundError("Post not found!");
-    } else {
-        return post;
-    }
+    return await prisma.post.findUniqueOrThrow({ where: { id } });
 };
 
 export const createPost = async (postData) => {
