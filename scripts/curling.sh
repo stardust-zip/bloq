@@ -5,5 +5,5 @@ HEADER="Content-Type: application/json"
 
 curl -i -X "$METHOD" \
     -H "$HEADER" \
-    -d '{"title": "", "description": "Kick"}' \
+    -d '{"title": "My First Post", "description": "Lets Kickstart the journey"}' \
     "$PATH_URL"
