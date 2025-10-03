@@ -27,7 +27,8 @@
             # Use corepack to install npm/pnpm/yarn as specified in package.json
             #pkgs.corepack
 
-            #pkgs.prisma-engines
+            pkgs.prisma-engines
+            pkgs.openssl
 
             # To install a specific alternative package manager directly,
             # comment out one of these to use an alternative package manager.
