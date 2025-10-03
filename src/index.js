@@ -1,9 +1,10 @@
+import config from "./config/index.js";
 import express from "express";
 import postsRouter from "./posts/posts.routes.js";
 import { errorMiddleware } from "./middleware/error.middleware.js";
 
 const app = express();
-const port = 8000;
+const port = config.port;
 
 app.use(express.json());
 
